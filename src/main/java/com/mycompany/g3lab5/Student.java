@@ -24,28 +24,43 @@ public class Student extends Person {
 		this.fee = fee;
 		//super(name, address); //Constructor call to super class (chaining) ทำตรงนี้ไม่ได้
 	}
-	
+
 	// Accessor Method
-	
-	public String getProgram () {
-		
+	public String getProgram() {
+
 		return program;
 	}
-	
-	public int getYear () {
-		
+
+	public int getYear() {
+
 		return year;
 	}
-	
-	public double getFee () {
-		
+
+	public double getFee() {
+
 		return fee;
 	}
-	
+
 	// Mutator Method
-	
-	public void setProgram (String program) {
-		
+	public void setProgram(String program) {
+
 		this.program = program;
 	}
+
+	public void setYear(int year) {
+
+		this.year = year;
+	}
+
+	public void setFee(double fee) {
+
+		this.fee = fee;
+	}
+	
+	@Override
+	public String toString () {
+		
+	return String.format("Student[%s, program=%s, year=%d, fee=%f]", super.toString(), program, year,fee);
+	}
+	
 }
