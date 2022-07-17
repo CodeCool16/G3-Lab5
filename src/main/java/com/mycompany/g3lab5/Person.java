@@ -41,7 +41,6 @@ public class Person {
 
 	public String toString() {
 
-        return String.format("Person[name=%s, address=%s]" name, address);
-	
+		return String.format("Person[name=%s, address=%s]" name, address);
 	}
 }
